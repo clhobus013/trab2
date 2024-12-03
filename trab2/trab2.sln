@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "trab2", "trab2\trab2.csproj", "{3AC7F388-167D-4BA5-85FA-CFCE57E827FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AC7F388-167D-4BA5-85FA-CFCE57E827FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AC7F388-167D-4BA5-85FA-CFCE57E827FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AC7F388-167D-4BA5-85FA-CFCE57E827FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AC7F388-167D-4BA5-85FA-CFCE57E827FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {29125DC8-65E1-496B-AC0A-9B7F6F75D057}
+	EndGlobalSection
+EndGlobal
