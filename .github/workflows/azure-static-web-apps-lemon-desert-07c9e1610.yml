@@ -32,6 +32,11 @@ jobs:
           api_location: "" # Api source code path - optional
           output_location: "." # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
+      - name: Compilar o projeto
+        run: dotnet build --configuration Release
+      - name: Aplicar migrações no banco de desenvolvimento
+      env:
+        DB_CONNECTION: ${{ secrets.DB_CONNECTION_DEV }}
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
