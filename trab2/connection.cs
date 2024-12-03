@@ -6,6 +6,6 @@ public class Connection : DbContext
     {
         base.OnConfiguring(optionsBuilder);
         optionsBuilder
-            .UseNpgsql(Environment.getEnvironmentVariable("DB_CONNECTION"));
+            .UseNpgsql(Environment.GetEnvironmentVariable("DB_CONNECTION"));
     }
 }
