@@ -34,9 +34,11 @@ jobs:
           ###### End of Repository/Build Configurations ######
       - name: Compilar o projeto
         run: dotnet build --configuration Release
-      - name: Aplicar migrações no banco de desenvolvimento
-      env:
-        DB_CONNECTION: ${{ secrets.DB_CONNECTION_DEV }}
+      
+      - name: Executar o projeto para aplicar migrações
+        env:
+          DB_CONNECTION: ${{ secrets.DB_CONNECTION_DEV }}
+        run: dotnet run --configuration Release
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
