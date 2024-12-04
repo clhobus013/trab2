@@ -32,6 +32,17 @@ jobs:
           api_location: "" # Api source code path - optional
           output_location: "." # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
+      - name: Compilar o projeto
+        run: |
+          cd trab2
+          dotnet build --configuration Release
+      
+      - name: Executar o projeto para aplicar migrações
+        env:
+          DB_CONNECTION: ${{ secrets.DB_CONNECTION_DEV }}
+        run: |
+          cd trab2
+          dotnet run --configuration Release
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
