@@ -39,7 +39,7 @@ jobs:
       
       - name: Executar o projeto para aplicar migrações
         env:
-          DB_CONNECTION: ${{ secrets.DB_CONNECTION_DEV }}
+          DB_CONNECTION: ${{ secrets.DB_CONNECTION_MAIN }}
         run: |
           cd trab2
           dotnet run --configuration Release
